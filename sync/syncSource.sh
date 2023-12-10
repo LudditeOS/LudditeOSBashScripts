@@ -17,7 +17,6 @@ PATH=/home/app/LudditeOS/bin:$PATH
 
 cd source
 repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
-
 repo sync
 
 echo "repo synced into source Folder"

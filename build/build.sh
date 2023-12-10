@@ -1,5 +1,6 @@
 #!/bin/bash -v
 
+#ssh key als env variable mitgeben.
 #fetch new changes
 
 PATH=/home/oliver/gitroot/LudditeOS/bin:$PATH
