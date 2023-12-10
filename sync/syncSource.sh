@@ -16,8 +16,8 @@ chmod +x $HOME/gitroot/LudditeOS/bin/repo
 PATH=/home/oliver/gitroot/LudditeOS/bin:$PATH
 
 cd source
-repo init -u https://android.googlesource.com/platform/manifest
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
 
+repo sync
 
-
-echo "repo erfolgreich initialisiert"
+echo "repo synced into source Folder"
