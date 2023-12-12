@@ -14,6 +14,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.
 git pull 
 
 
-#lunch command mit den richtigen Parametern
+#start build
 . build/envsetup.sh
-lunch
+lunch aosp_x86_64-eng
+m
