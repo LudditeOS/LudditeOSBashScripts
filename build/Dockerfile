@@ -23,5 +23,4 @@ RUN chmod +x /home/app/build.sh
 
 
 
-# CMD ./home/app/build.sh
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ./home/app/build.sh
