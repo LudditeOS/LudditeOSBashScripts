@@ -19,5 +19,8 @@ RUN git config --global user.name ${GIT_NAME}
 RUN git config --global user.email ${GIT_MAIL}
 RUN git config --global http.version HTTP/1.1
 
+RUN chmod +x /home/app/build/build.sh
+
+
 
 CMD ./home/app/build.sh
