@@ -1,14 +1,17 @@
 #!/bin/bash -v
 
-#ssh key als env variable mitgeben.
-#fetch new changes
+#Repo installieren
+curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
+chmod +x /home/app/LudditeOS/bin/repo
 
-PATH=/home/oliver/gitroot/LudditeOS/bin:$PATH
+#Eigenes Path Skript schreiben das den Pfad in einer neuen Terminal Session wieder setzen kann
+PATH=/home/app/LudditeOS/bin:$PATH
+
+cd /home/app/LudditeOS/source
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
+git pull 
 
 
 #lunch command mit den richtigen Parametern
-
-
-
-
-./deploy.sh
+. build/envsetup.sh
+lunch
