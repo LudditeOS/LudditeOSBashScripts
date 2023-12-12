@@ -1,5 +1,7 @@
 #!/bin/bash -v
 
+echo "build script start"
+
 #Repo installieren
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
 chmod +x /home/app/LudditeOS/bin/repo
