@@ -17,4 +17,4 @@ git pull
 #start build
 . build/envsetup.sh
 lunch aosp_x86_64-eng
-m
+m && m emu_img_zip
