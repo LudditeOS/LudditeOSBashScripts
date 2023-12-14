@@ -16,5 +16,8 @@ git pull
 
 #start build
 . build/envsetup.sh
-lunch aosp_x86_64-eng
-m && m emu_img_zip
+#lunch aosp_x86_64-eng
+lunch sdk_phone_x86_64
+#m
+make emu_img_zip
+#m && m emu_img_zip /home/oliver/share/version
