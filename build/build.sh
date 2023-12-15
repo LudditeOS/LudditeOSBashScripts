@@ -15,7 +15,7 @@ git pull
 
 #start build
 . build/envsetup.sh
-lunch aosp-panther-userdebug
+lunch aosp_panther-userdebug
 m
 #lunch aosp_x86_64-eng
 #m
