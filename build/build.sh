@@ -16,7 +16,8 @@ git pull
 
 #start build
 . build/envsetup.sh
-lunch
+lunch aosp_arm64-eng
+m
 #lunch aosp_x86_64-eng
 #m
 #lunch sdk_phone_arm
