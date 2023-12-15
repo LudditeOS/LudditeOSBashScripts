@@ -11,12 +11,11 @@ PATH=/home/app/LudditeOS/bin:$PATH
 
 cd /home/app/LudditeOS/source
 repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
-git pull 
-
+git pull
 
 #start build
 . build/envsetup.sh
-lunch aosp_arm64-eng
+lunch aosp-panther-userdebug
 m
 #lunch aosp_x86_64-eng
 #m
