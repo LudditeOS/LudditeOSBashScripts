@@ -15,7 +15,7 @@ git pull
 
 #start build
 . build/envsetup.sh
-lunch sdk_phone_x86
+lunch sdk_phone_arm64-v8a
 m
 make emu_img_zip
 #lunch aosp_x86_64-eng
