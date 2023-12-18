@@ -20,7 +20,7 @@ m
 make emu_img_zip
 
 
-make sdk_repo
+make sdk sdk_repo
 #lunch aosp_x86_64-eng
 #m
 #lunch sdk_phone_x86
