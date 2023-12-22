@@ -4,7 +4,7 @@ cd /home/oliver/LudditeOS
 mkdir bin
 
 #Repo installieren
-sudo rm -rf /home/oliver/LudditeOS/bin/repo
+sudo rm -rf /home/oliver/LudditeOS/bin
 cd /home/oliver/LudditeOS/bin
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/oliver/LudditeOS/bin/repo
 chmod +x /home/oliver/LudditeOS/bin/repo
