@@ -1,5 +1,7 @@
 #!/bin/bash -v
 
+cd /home/oliver/LudditeOS
+mkdir bin
 
 #Repo installieren
 sudo rm -rf /home/oliver/LudditeOS/bin/repo
