@@ -3,6 +3,8 @@
 
 #Repo installieren
 sudo rm -rf /home/oliver/LudditeOS/bin/repo
+cd /home/oliver/LudditeOS/bin
+mkdir repo
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/oliver/LudditeOS/bin/repo
 chmod +x /home/oliver/LudditeOS/bin/repo
 
