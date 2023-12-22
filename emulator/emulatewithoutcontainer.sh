@@ -1,11 +1,14 @@
 #!/bin/bash -v
 
+sudo rm -rf /home/oliver/LudditeOS/bin
+
 cd /home/oliver/LudditeOS
 mkdir bin
+cd bin
+
 
 #Repo installieren
-sudo rm -rf /home/oliver/LudditeOS/bin
-cd /home/oliver/LudditeOS/bin
+
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/oliver/LudditeOS/bin/repo
 chmod +x /home/oliver/LudditeOS/bin/repo
 
@@ -17,7 +20,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.
 
 . build/envsetup.sh
 lunch aosp_x86_64-eng
-emulator @foo
+emulator
 
 
 
