@@ -13,7 +13,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.
 
 . build/envsetup.sh
 lunch aosp_x86_64-eng
-emulator
+emulator --foo
 
 
 
