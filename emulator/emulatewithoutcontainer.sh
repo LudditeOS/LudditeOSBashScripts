@@ -21,7 +21,7 @@ echo "path set"
 
 cd /home/oliver/LudditeOS/source
 echo "source folder"
-sudo repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
 echo "repo init"
 
 . build/envsetup.sh
