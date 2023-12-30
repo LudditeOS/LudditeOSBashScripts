@@ -1,5 +1,8 @@
 #!/bin/bash -v
 
+### eigener ordner erstellen für emulator!!!
+#Lunch und so von Hand installieren einfach so dass ich den emulator starten kann
+
 sudo rm -rf /home/oliver/LudditeOS/bin
 echo "bin folder deleted"
 
