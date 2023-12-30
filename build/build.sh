@@ -15,5 +15,5 @@ git pull
 
 #start build
 . build/envsetup.sh
-lunch aosp_x86_64-eng
+lunch aosp_cf_x86_phone-userdebug
 m
