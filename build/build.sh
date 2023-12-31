@@ -14,5 +14,5 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.
 
 #start build
 . build/envsetup.sh
-lunch aosp_cf_x86_phone-userdebug
+lunch aosp_x86_64-eng
 m
