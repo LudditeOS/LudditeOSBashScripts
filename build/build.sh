@@ -14,7 +14,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.
 
 #start build
 . build/envsetup.sh
-lunch aosp_cf_x86_64_phone-eng
+lunch sdk_phone_x86_64-userdebug
 m
 cd /home/app/LudditeOS 
 chmod -R 777 source
