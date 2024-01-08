@@ -3,6 +3,7 @@ FROM ubuntu:latest
 COPY . /home/app
 RUN mkdir -p /home/app/LudditeOS
 RUN mkdir -p /home/app/LudditeOS/bin
+RUN mkdir -p /home/app/LudditeOS/android
 RUN mkdir -p /home/app/LudditeOS/android/lineage
 
 ENV GIT_NAME=git_name
