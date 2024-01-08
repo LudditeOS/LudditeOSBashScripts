@@ -17,3 +17,10 @@ export CCACHE_EXEC=/usr/bin/ccache
 cd /home/app/LudditeOS/android/lineage
 repo init -u https://github.com/LineageOS/android.git -b lineage-19.1 --git-lfs
 repo sync
+
+#start build
+source . build/envsetup.sh
+lunch lineage_sdk_phone_x86_64-eng
+mka
+cd /home/app/LudditeOS 
+chmod -R 777 android

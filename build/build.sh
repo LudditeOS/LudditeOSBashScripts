@@ -10,7 +10,7 @@ chmod a+x /home/app/LudditeOS/bin/repo
 PATH=/home/app/LudditeOS/bin:$PATH
 
 cd /home/app/LudditeOS/android/lineage
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
+repo init -u https://github.com/LineageOS/android.git -b lineage-19.1 --git-lfs
 git lfs install
 git config --global trailer.changeid.key "Change-Id"
 
@@ -24,3 +24,8 @@ lunch lineage_sdk_phone_x86_64-eng
 mka
 cd /home/app/LudditeOS 
 chmod -R 777 android
+
+
+
+
+
