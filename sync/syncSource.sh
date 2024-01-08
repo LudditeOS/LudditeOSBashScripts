@@ -1,5 +1,5 @@
 #!/bin/bash -v
-mkdir -p ~/android/lineage
+mkdir -p /home/app/LudditeOS/android/lineage
 
 #Repo installieren
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
