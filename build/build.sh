@@ -9,7 +9,7 @@ chmod a+x /home/app/LudditeOS/bin/repo
 #Eigenes Path Skript schreiben das den Pfad in einer neuen Terminal Session wieder setzen kann
 PATH=/home/app/LudditeOS/bin:$PATH
 
-cd /home/app/LudditeOS/lineage
+cd /home/app/LudditeOS/android/lineage
 repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r78
 git lfs install
 git config --global trailer.changeid.key "Change-Id"
@@ -23,4 +23,4 @@ source . build/envsetup.sh
 lunch lineage_sdk_phone_x86_64-eng
 mka
 cd /home/app/LudditeOS 
-chmod -R 777 lineage
+chmod -R 777 android

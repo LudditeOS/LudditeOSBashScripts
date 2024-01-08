@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 COPY . /home/app
 
-RUN mkdir /home/app/LudditeOS
-RUN mkdir /home/app/LudditeOS/bin
-RUN mkdir /home/app/LudditeOS/lineage
+RUN mkdir -p /home/app/LudditeOS
+RUN mkdir -p /home/app/LudditeOS/bin
+RUN mkdir -p /home/app/LudditeOS/android/lineage
 
 ENV GIT_NAME=git_name
 ENV GIT_MAIL=git_mail
