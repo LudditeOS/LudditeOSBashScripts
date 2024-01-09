@@ -20,7 +20,7 @@ export CCACHE_EXEC=/usr/bin/ccache
 
 #start build
 source build/envsetup.sh
-lunch lineage_sdk_phone_x86_64-eng
+lunch lineage_sdk_phone_arm-eng
 mka
 mka sdk_addon
 cd /home/app/LudditeOS 
