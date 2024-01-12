@@ -10,7 +10,7 @@ chmod a+x /home/app/LudditeOS/bin/repo
 PATH=/home/app/LudditeOS/bin:$PATH
 
 cd /home/app/LudditeOS/android/lineage
-repo init -u https://github.com/LineageOS/android.git -b lineage-19.1 --git-lfs
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 git lfs install
 git config --global trailer.changeid.key "Change-Id"
 
@@ -20,9 +20,7 @@ export CCACHE_EXEC=/usr/bin/ccache
 
 #start build
 source build/envsetup.sh
-lunch lineage_arm64-eng
-mka
-mka sdk_addon
+breakfast star2lte
 cd /home/app/LudditeOS 
 chmod -R 777 android
 
