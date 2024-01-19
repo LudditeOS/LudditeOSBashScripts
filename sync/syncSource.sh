@@ -4,7 +4,7 @@ mkdir -p /home/app/LudditeOS/android/lineage
 #Repo installieren
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
 chmod a+x /home/app/LudditeOS/bin/repo
-cp roomservice.xml /home/app/LudditeOS/bin/repo/.repo/local_manifests/roomservice.xml
+cp roomservice.xml /home/app/LudditeOS/bin/repo/local_manifests/roomservice.xml
 
 #Eigenes Path Skript schreiben das den Pfad in einer neuen Terminal Session wieder setzen kann
 PATH=/home/app/LudditeOS/bin:$PATH
