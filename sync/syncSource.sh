@@ -15,6 +15,8 @@ git config --global trailer.changeid.key "Change-Id"
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 
+sleep 1000
+
 cd /home/app/LudditeOS/android/lineage
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 #repo sync
