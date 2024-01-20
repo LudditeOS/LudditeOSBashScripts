@@ -18,7 +18,7 @@ export CCACHE_EXEC=/usr/bin/ccache
 
 cd /home/app/LudditeOS/android/lineage
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
-cp config/roomservicestar2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests
+cp /home/app/config/roomservicestar2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests
 
 
 repo sync
