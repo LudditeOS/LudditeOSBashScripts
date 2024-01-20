@@ -22,10 +22,11 @@ cp /home/app/config/roomservicestar2lte.xml /home/app/LudditeOS/android/lineage/
 
 
 repo sync --force-sync
+source build/envsetup.sh
 breakfast star2lte
+
+croot
+brunch star2lte
 
 cd /home/app/LudditeOS/
 chmod -R 777 android
-
-#start build
-#source build/envsetup.sh
