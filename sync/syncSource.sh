@@ -21,7 +21,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 cp /home/app/config/roomservicestar2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests
 
 
-repo sync
+repo sync --force-sync
 breakfast star2lte
 
 cd /home/app/LudditeOS/
