@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="TheMuppets" fetch="https://github.com/" revision="refs/heads/lineage-20.0" />
-    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung"
+    <project name="TheMuppets/proprietary_vendor_samsung_star2lte" path="vendor/samsung_star2lte"
         remote="TheMuppets" depth="1" />
 </manifest>
