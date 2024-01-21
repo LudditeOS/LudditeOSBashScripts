@@ -1,6 +1,5 @@
 FROM ubuntu:latest
 
-COPY . /home/app
 RUN mkdir -p /home/app/LudditeOS
 RUN mkdir -p /home/app/LudditeOS/bin
 RUN mkdir -p /home/app/LudditeOS/android
@@ -22,5 +21,6 @@ RUN git config --global user.name ${GIT_NAME}
 RUN git config --global user.email ${GIT_MAIL}
 RUN git config --global http.version HTTP/1.1
 
+COPY . /home/app
 
 CMD ./home/app/syncSource.sh

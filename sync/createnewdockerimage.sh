@@ -1,3 +1,4 @@
 docker rm LudditeSync
 git pull
-docker build -t luddite-sync-img:1.0 .
+docker build --cache-from luddite-sync-img:1.0 -t luddite-sync-img:1.0 .
+
