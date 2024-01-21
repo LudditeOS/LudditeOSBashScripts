@@ -22,11 +22,11 @@ export CCACHE_EXEC=/usr/bin/ccache
 source build/envsetup.sh
 breakfast star2lte
 
-croot
-brunch star2lte
+# croot
+# brunch star2lte
 
-cd /home/app/LudditeOS 
-chmod -R 777 android
+# cd /home/app/LudditeOS 
+# chmod -R 777 android
 
 
 
