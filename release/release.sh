@@ -1,3 +1,5 @@
 timestamp=$(date +%Y%m%d%H%M%S)
-cp /home/oliver/LudditeOS/android/lineage/out/target/product/star2lte/*.zip relase/"$timestamp"
+cd /home/oliver/LudditeOS/relase
+mkdir "$timestamp"
+cp /home/oliver/LudditeOS/android/lineage/out/target/product/star2lte/*.zip /home/oliver/LudditeOS/relase/"$timestamp"
 
