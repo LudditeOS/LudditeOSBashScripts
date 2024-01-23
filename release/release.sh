@@ -1,3 +1,3 @@
-#zweite ssd mounten und freigeben, und dann als Release benützen
+timestamp=$(date +%Y%m%d%H%M%S)
+cp home/oliver/LudditeOS/android/lineage/out/target/product/star2lte/*.zip relase/"$timestamp"
 
-cp lineage-20.0-20240122-UNOFFICIAL-star2lte.zip relase/irgendwas
