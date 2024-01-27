@@ -24,7 +24,7 @@ cp /home/app/config/roomservicestar2lte.xml /home/app/LudditeOS/android/lineage/
 
 
 
-repo sync --force-sync
+repo sync --force-sync --force-remove-dirty
 
 source build/envsetup.sh
 breakfast star2lte
