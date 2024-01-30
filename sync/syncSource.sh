@@ -20,7 +20,7 @@ cd /home/app/LudditeOS/android/lineage
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 
 mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-cp /home/app/config/roomservicestar2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/
+cp /home/app/config/roomservice.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/
 
 
 
