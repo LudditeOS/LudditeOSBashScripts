@@ -29,5 +29,8 @@ repo sync --force-sync --force-remove-dirty
 source build/envsetup.sh
 breakfast star2lte
 
+croot
+brunch star2lte
+
 cd /home/app/LudditeOS 
 chmod -R 777 android
