@@ -1,0 +1,10 @@
+--- handheld_product_original.mk	2024-02-18 09:39:54.084928050 +0000
++++ handheld_product.mk	2024-02-15 21:44:39.916487317 +0000
+@@ -23,6 +23,7 @@
+ # /product packages
+ PRODUCT_PACKAGES += \
+     Browser2 \
++    FocusLauncher \
+     Calendar \
+     Contacts \
+     DeskClock \
