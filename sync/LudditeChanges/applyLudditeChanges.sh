@@ -5,5 +5,5 @@ cd ..
 
 cd focuslauncher
 sh focuslauncher.sh
-cd..
+cd ..
 
