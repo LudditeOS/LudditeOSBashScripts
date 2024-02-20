@@ -6,10 +6,10 @@ buildDirectory="/home/oliver/LudditeOS/android/lineage/build/target/product/"
 
 mkdir -p "$appdirectory"
 wget "$url" -P "$appdirectory"
-cp -f "$(dirname "$0")/Android.mk" "$appdirectory"
+cp -f "$(basename "$0")"/Android.mk "$appdirectory"
 
 mkdir -p "$buildDirectory"
-patch "$appdirectory/handheld_product.mk" < "$(dirname "$0")/FocusLauncherPatch"
+patch "$appdirectory/handheld_product.mk" < "$(dirname "$0")"/FocusLauncherPatch
 
 
 
