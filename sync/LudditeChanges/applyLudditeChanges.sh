@@ -1,7 +1,9 @@
 #bootanimation.sh
-cd /bootanimation/
-sh bootanimation/bootanimation.sh
+cd bootanimation
+sh bootanimation.sh
+cd ..
 
-cd /focuslauncher/
-sh focuslauncher/focuslauncher.sh
+cd focuslauncher
+sh focuslauncher.sh
+cd..
 
