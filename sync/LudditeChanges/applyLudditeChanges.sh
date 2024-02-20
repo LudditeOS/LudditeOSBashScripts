@@ -1,6 +1,6 @@
 #bootanimation.sh
-bootanimation/bootanimation.sh
-focuslauncher/focuslauncher.sh
+source bootanimation/bootanimation.sh
+source focuslauncher/focuslauncher.sh
 
 
 

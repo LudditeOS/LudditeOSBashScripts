@@ -26,11 +26,6 @@ cp /home/app/config/roomservice.xml /home/app/LudditeOS/android/lineage/.repo/lo
 
 repo sync --force-sync --force-remove-dirty
 
-#Apply LudditeOS Patches
-#aufpassen in welchem directory ich bin
-
-
-
 
 #Build
 source build/envsetup.sh
