@@ -9,7 +9,7 @@ wget -O "$appdirectory/FreeBrowser.apk" "$url"
 cp Android.mk "$appdirectory"
 
 mkdir -p "$buildDirectory"
-patch "$buildDirectory/handheld_product.mk" < FocusLauncherPatch
+patch "$buildDirectory/handheld_product.mk" < FreeBrowserPatch
 
 
 
