@@ -4,6 +4,9 @@ url="https://f-droid.org/repo/org.woheller69.browser_2600.apk"
 appdirectory="/home/oliver/LudditeOS/android/lineage/packages/apps/FreeBrowser"
 buildDirectory="/home/oliver/LudditeOS/android/lineage/build/target/product"
 
+if [ -d "$appdirectory" ]; then
+    rm -rf "$appdirectory"
+fi
 mkdir -p "$appdirectory"
 wget -O "$appdirectory/FreeBrowser.apk" "$url"
 cp Android.mk "$appdirectory"

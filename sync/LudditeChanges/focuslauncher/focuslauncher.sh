@@ -4,6 +4,10 @@ url="https://github.com/ostaubzug/FocusLauncherRelease/releases/download/V0.1/ap
 appdirectory="/home/oliver/LudditeOS/android/lineage/packages/apps/FocusLauncher"
 buildDirectory="/home/oliver/LudditeOS/android/lineage/build/target/product"
 
+
+if [ -d "$appdirectory" ]; then
+    rm -rf "$appdirectory"
+fi
 mkdir -p "$appdirectory"
 wget "$url" -P "$appdirectory"
 cp Android.mk "$appdirectory"
