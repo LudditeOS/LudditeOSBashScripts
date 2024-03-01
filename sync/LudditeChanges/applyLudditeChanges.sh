@@ -7,3 +7,7 @@ cd focuslauncher
 sh focuslauncher.sh
 cd ..
 
+cd freebrowser
+sh freebrowser.sh
+cd ..
+
