@@ -11,3 +11,6 @@ cd freebrowser
 sh freebrowser.sh
 cd ..
 
+cd dns66
+sh dns66.sh
+cd ..
