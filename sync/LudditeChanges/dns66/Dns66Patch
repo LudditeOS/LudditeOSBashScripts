@@ -1,8 +1,0 @@
-PRODUCT_PACKAGES += \
-     Browser2 \
-     FocusLauncher \
-     FreeBrowser \
-+    Dns66 \
-     Calendar \
-     Contacts \
-     DeskClock \
