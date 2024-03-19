@@ -5,7 +5,7 @@ cd ..
 
 cd standardApps
 
-cd aegias
+cd aegis
 sh aegis.sh
 cd ..
 
@@ -32,3 +32,5 @@ cd ..
 cd whatsapp
 sh whatsapp.sh
 cd ..
+
+cp handheld_product.mk /home/oliver/LudditeOS/android/lineage/build/make/target/product/handheld_product.mk
