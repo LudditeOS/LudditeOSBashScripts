@@ -3,14 +3,32 @@ cd bootanimation
 sh bootanimation.sh
 cd ..
 
+cd standardApps
+
+cd aegias
+sh aegis.sh
+cd ..
+
+cd davx
+sh davx.sh
+cd ..
+
 cd focuslauncher
 sh focuslauncher.sh
 cd ..
 
-cd freebrowser
-sh freebrowser.sh
+cd nextcloud
+sh nextcloud.sh
 cd ..
 
-cd dns66
-sh dns66.sh
+cd osmmaps
+sh osmmaps.sh
+cd ..
+
+cd phoenix
+sh phoenix.sh
+cd ..
+
+cd whatsapp
+sh whatsapp.sh
 cd ..

@@ -13,7 +13,6 @@ wget "$url" -P "$appdirectory"
 cp Android.mk "$appdirectory"
 
 mkdir -p "$buildDirectory"
-patch "$buildDirectory/handheld_product.mk" < FocusLauncherPatch
 
 
 
