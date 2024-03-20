@@ -16,7 +16,7 @@ git config --global trailer.changeid.key "Change-Id"
 
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
-
+export RELAX_USES_LIBRARY_CHECK=true #nextcloud app hat immer Fehler produziert wegen legacy abhängigkeiten
 
 #start build
 source build/envsetup.sh
