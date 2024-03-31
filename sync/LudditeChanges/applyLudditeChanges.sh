@@ -5,10 +5,6 @@ cd ..
 
 cd standardApps
 
-cd aegis
-sh aegis.sh
-cd ..
-
 cd davx
 sh davx.sh
 cd ..
@@ -21,16 +17,11 @@ cd nextcloud
 sh nextcloud.sh
 cd ..
 
-cd osmmaps
-sh osmmaps.sh
+cd removeBrowser
+sh removeBrowser.sh
 cd ..
 
-cd phoenix
-sh phoenix.sh
+cd handheldProduct
+sh handheldProduct.sh
 cd ..
 
-cd whatsapp
-sh whatsapp.sh
-cd ..
-
-cp handheld_product.mk /home/oliver/LudditeOS/android/lineage/build/make/target/product/handheld_product.mk
