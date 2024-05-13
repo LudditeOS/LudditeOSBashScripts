@@ -24,4 +24,3 @@ cd ..
 cd handheldProduct
 sh handheldProduct.sh
 cd ..
-
