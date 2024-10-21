@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ~/LudditeOS/android/lineage
+
 # Name or ID of the first container
 CONTAINER1="LudditeSync"
 # Name or ID of the second container
