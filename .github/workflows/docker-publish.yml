@@ -69,15 +69,28 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      # Build and push Docker image with Buildx (don't push on PR)
-      # https://github.com/docker/build-push-action
-      - name: Build and push Docker image
-        id: build-and-push
-        uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
+      # Build and push Docker image for the first Dockerfile (sync)
+      - name: Build and push Docker image (sync)
+        id: build-and-push-sync
+        uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./sync # Path to the subdirectory containing the Dockerfile
+          file: ./sync/Dockerfile # Explicitly point to Dockerfile in sync
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}-sync
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # Build and push Docker image for the second Dockerfile (build)
+      - name: Build and push Docker image (build)
+        id: build-and-push-build
+        uses: docker/build-push-action@v5
+        with:
+          context: ./build # Path to the subdirectory containing the Dockerfile
+          file: ./build/Dockerfile # Explicitly point to Dockerfile in build
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}-build
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -90,9 +103,10 @@ jobs:
       - name: Sign the published Docker image
         if: ${{ github.event_name != 'pull_request' }}
         env:
-          # https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-an-intermediate-environment-variable
-          TAGS: ${{ steps.meta.outputs.tags }}
-          DIGEST: ${{ steps.build-and-push.outputs.digest }}
-        # This step uses the identity token to provision an ephemeral certificate
-        # against the sigstore community Fulcio instance.
-        run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
+          TAGS1: ${{ steps.meta.outputs.tags }}-sync
+          DIGEST1: ${{ steps.build-and-push-sync.outputs.digest }}
+          TAGS2: ${{ steps.meta.outputs.tags }}-build
+          DIGEST2: ${{ steps.build-and-push-build.outputs.digest }}
+        run: |
+          echo "${TAGS1}" | xargs -I {} cosign sign --yes {}@${DIGEST1}
+          echo "${TAGS2}" | xargs -I {} cosign sign --yes {}@${DIGEST2}
