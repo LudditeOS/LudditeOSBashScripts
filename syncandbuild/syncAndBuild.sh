@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Name or ID of the first container
-CONTAINER1="LudditeBuild"
+CONTAINER1="LudditeSync"
 # Name or ID of the second container
-CONTAINER2="LudditeSync"
+CONTAINER2="LudditeBuild"
+
 
 # Start the first container
 docker start $CONTAINER1
