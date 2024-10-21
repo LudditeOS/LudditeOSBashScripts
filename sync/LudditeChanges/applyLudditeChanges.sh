@@ -13,8 +13,8 @@ cd focuslauncher
 sh focuslauncher.sh
 cd ..
 
-cd nextcloud
-sh nextcloud.sh
+cd ncphotos
+sh ncphotos.sh
 cd ..
 
 cd removeBrowser

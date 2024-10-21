@@ -1,13 +1,13 @@
 #install Focuslauncher
 
-url="https://f-droid.org/repo/com.nextcloud.client_30280090.apk"
+url="https://github.com/nkming2/nc-photos/releases/download/69.1/nc_photos-69-1.apk"
 appdirectory="/home/oliver/LudditeOS/android/lineage/packages/apps/Nextcloud"
 
 if [ -d "$appdirectory" ]; then
     rm -rf "$appdirectory"
 fi
 mkdir -p "$appdirectory"
-wget -O "$appdirectory/Nextcloud.apk" "$url"
+wget -O "$appdirectory/ncphotos.apk" "$url"
 cp Android.mk "$appdirectory"
 
 
