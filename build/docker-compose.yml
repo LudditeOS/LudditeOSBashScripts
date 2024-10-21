@@ -1,0 +1,11 @@
+version: "3"
+services:
+  luddite_build:
+    image: luddite-build-img:1.0
+    container_name: LudditeBuild
+    environment:
+      - GIT_NAME=ludditesrv
+      - GIT_MAIL=git@luddite-os.ch
+    volumes:
+      - /home/oliver/LudditeOS/android:/home/app/LudditeOS/android
+      - /home/sshkeys:/root/.ssh
