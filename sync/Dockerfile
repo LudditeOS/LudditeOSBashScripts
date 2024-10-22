@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 RUN mkdir -p /home/app/LudditeOS
 RUN mkdir -p /home/app/LudditeOS/bin
