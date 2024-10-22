@@ -11,9 +11,9 @@ ENV GIT_MAIL=git_mail
 RUN apt-get update && apt-get install -y software-properties-common
 RUN add-apt-repository universe
  
-RUN sudo dpkg --print-architecture
-RUN sudo dpkg --print-foreign-architectures
-RUN sudo dpkg --add-architecture i386
+RUN dpkg --print-architecture
+RUN dpkg --print-foreign-architectures
+RUN dpkg --add-architecture i386
 
 RUN apt-get install ia32-libs
 
