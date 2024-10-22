@@ -7,6 +7,7 @@ RUN mkdir -p /home/app/LudditeOS/android/lineage
 ENV GIT_NAME=git_name
 ENV GIT_MAIL=git_mail
 
+RUN apt-get install software-properties-common
 RUN add-apt-repository universe
 
 RUN apt-get -y update
