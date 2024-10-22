@@ -7,7 +7,7 @@ RUN mkdir -p /home/app/LudditeOS/android/lineage
 ENV GIT_NAME=git_name
 ENV GIT_MAIL=git_mail
 
-RUN add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
+RUN add-apt-repository universe
 
 RUN apt-get -y update
 RUN apt-get -y install git
