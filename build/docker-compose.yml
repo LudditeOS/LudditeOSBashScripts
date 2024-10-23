@@ -1,7 +1,7 @@
 version: "3"
 services:
   luddite_build:
-    image: luddite-build-img:1.0
+    image: oli1115/ludditebuild:latest
     container_name: LudditeBuild
     environment:
       - GIT_NAME=ludditesrv
