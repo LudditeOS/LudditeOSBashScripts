@@ -1,10 +1,12 @@
 version: "3"
 services:
-  luddite_build:
-    image: oli1115/ludditebuild:latest
-    container_name: LudditeBuild
+  luddite_sync:
+    image: oli1115/ludditesync:latest
+    container_name: LudditeSync
     environment:
       - GIT_NAME=ludditesrv
       - GIT_MAIL=git@luddite-os.ch
+      - STAR2LTE=true
+      - ORIOLE=false
     volumes:
       - /home/oliver/LudditeOS/android:/home/app/LudditeOS/android

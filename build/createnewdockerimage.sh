@@ -1,2 +1,3 @@
-docker rm LudditeBuild
-docker build --cache-from luddite-build-img:1.0 -t luddite-build-img:1.0 .
+docker rm LudditeSync
+docker build --cache-from luddite-sync-img:1.0 -t luddite-sync-img:1.0 .
+
