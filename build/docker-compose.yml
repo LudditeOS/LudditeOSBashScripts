@@ -1,8 +1,8 @@
 version: "3"
 services:
   luddite_sync:
-    image: oli1115/ludditesync:latest
-    container_name: LudditeSync
+    image: oli1115/ludditebuild:latest
+    container_name: LudditeBuild
     environment:
       - GIT_NAME=ludditesrv
       - GIT_MAIL=git@luddite-os.ch
