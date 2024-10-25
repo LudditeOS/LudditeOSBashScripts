@@ -23,6 +23,7 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
     cp /home/app/config/roomservice.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/
 
     repo sync --force-sync --force-remove-dirty
+    chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
 
     source build/envsetup.sh
@@ -40,6 +41,7 @@ if [[ "${ORIOLE,,}" == "true" ]]; then
     cp /home/app/config/roomservice.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/
 
     repo sync --force-sync --force-remove-dirty
+    chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
 
     source build/envsetup.sh

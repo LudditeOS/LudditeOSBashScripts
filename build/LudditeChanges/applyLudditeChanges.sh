@@ -1,26 +1,8 @@
 #bootanimation.sh
-cd bootanimation
-sh bootanimation.sh
-cd ..
 
-cd standardApps
-
-cd davx
-sh davx.sh
-cd ..
-
-cd focuslauncher
-sh focuslauncher.sh
-cd ..
-
-cd ncphotos
-sh ncphotos.sh
-cd ..
-
-cd removeBrowser
-sh removeBrowser.sh
-cd ..
-
-cd handheldProduct
-sh handheldProduct.sh
-cd ..
+bash /home/app/LudditeChanges/bootanimation/bootanimation.sh
+bash /home/app/LudditeChanges/standardApps/davx.sh
+bash /home/app/LudditeChanges/standardApps/focuslauncher.sh
+bash /home/app/LudditeChanges/standardApps/ncphotos.sh
+bash /home/app/LudditeChanges/standardApps/removeBrowser.sh
+bash /home/app/LudditeChanges/standardApps/handheldProduct.sh
