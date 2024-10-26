@@ -6,7 +6,7 @@ services:
     environment:
       - GIT_NAME=ludditesrv
       - GIT_MAIL=git@luddite-os.ch
-      - STAR2LTE=true
-      - ORIOLE=false
+      - STAR2LTE=false
+      - ORIOLE=true
     volumes:
       - /home/oliver/LudditeOS/android:/home/app/LudditeOS/android
