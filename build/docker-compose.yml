@@ -1,6 +1,6 @@
 version: "3"
 services:
-  luddite_sync:
+  luddite_build:
     image: oli1115/ludditebuild:latest
     container_name: LudditeBuild
     environment:
