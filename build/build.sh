@@ -20,7 +20,7 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
     cd /home/app/LudditeOS/android/lineage
     repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-    cp /home/app/config/roomservice.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/
+    cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
     repo sync --force-sync --force-remove-dirty
     chmod -R a+x /home/app/LudditeChanges
@@ -38,7 +38,7 @@ if [[ "${ORIOLE,,}" == "true" ]]; then
     cd /home/app/LudditeOS/android/lineage
     repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-    cp /home/app/config/roomservice.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/
+    cp /home/app/config/roomservice-oriole.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
     repo sync --force-sync --force-remove-dirty
     chmod -R a+x /home/app/LudditeChanges
