@@ -2,6 +2,7 @@
 mkdir -p /home/app/LudditeOS/android/lineage
 
 #Repo installieren
+#evt. versuchen repo auch im volume zu belassen um es neustarten zu können
 curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
 chmod a+x /home/app/LudditeOS/bin/repo
 
@@ -21,11 +22,11 @@ export CCACHE_EXEC=/usr/bin/ccache
 if [[ "${STAR2LTE,,}" == "true" ]]; then
     echo "Luddite Build star2lte lineage 20"
     cd /home/app/LudditeOS/android/lineage
-    repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs --force-sync
+    repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
     cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
-    repo sync --force-sync --force-remove-dirty
+    repo sync --force-remove-dirty
     chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
 
@@ -39,11 +40,11 @@ fi
 if [[ "${ORIOLE,,}" == "true" ]]; then
     echo "Luddite Build oriole lineage 21"
     cd /home/app/LudditeOS/android/lineage
-    repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --force-sync
+    repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
     cp /home/app/config/roomservice-oriole.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
-    repo sync --force-sync --force-remove-dirty
+    repo sync --force-remove-dirty
     chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
 
