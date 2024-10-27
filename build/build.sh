@@ -1,21 +1,9 @@
 #!/bin/bash -v
+mkdir -p /home/app/LudditeOS/android/lineage
 
-# Define the target directory and repo binary path
-TARGET_DIR="/home/app/LudditeOS/android/lineage"
-REPO_PATH="/home/app/LudditeOS/bin/repo"
-
-# Check if the directory is missing or empty, and if repo is not installed
-if [ ! -d "$TARGET_DIR" ] || [ -z "$(ls -A "$TARGET_DIR")" ] || [ ! -f "$REPO_PATH" ]; then
-
-  mkdir -p "$TARGET_DIR"
-
-  curl https://storage.googleapis.com/git-repo-downloads/repo > "$REPO_PATH"
-  chmod a+x "$REPO_PATH"
-  echo "Repo installed successfully."
-else
-  echo "Repo already installed, skipping installation."
-fi
-
+#Repo installieren
+curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
+chmod a+x /home/app/LudditeOS/bin/repo
 
 
 
