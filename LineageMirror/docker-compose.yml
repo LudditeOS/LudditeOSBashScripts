@@ -2,7 +2,7 @@ version: "3"
 services:
   luddite_mirror_sync:
     image: oli1115/ludditemirrorsync:latest
-    container_name: LudditeBuild
+    container_name: LudditeMirrorSync
     environment:
       - GIT_NAME=ludditmirrorsync
       - GIT_MAIL=git@luddite-os.ch
