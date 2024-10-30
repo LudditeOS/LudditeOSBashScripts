@@ -1,0 +1,10 @@
+version: "3"
+services:
+  luddite_build:
+    image: oli1115/ludditemirrorsync:latest
+    container_name: LudditeBuild
+    environment:
+      - GIT_NAME=ludditmirrorsync
+      - GIT_MAIL=git@luddite-os.ch
+    volumes:
+      - /home/oliver/LudditeOS:/home/app/LudditeOS

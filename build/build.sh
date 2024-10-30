@@ -21,6 +21,7 @@ export CCACHE_EXEC=/usr/bin/ccache
 
 
 if [ "$is_new" = "true" ]; then
+  cd /home/app/LudditeOS/android/lineage
   repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 fi
 
