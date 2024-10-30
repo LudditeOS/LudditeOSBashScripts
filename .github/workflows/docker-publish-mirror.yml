@@ -1,4 +1,4 @@
-name: ludditebuild
+name: ludditemirrorsync
 
 on:
   push:
