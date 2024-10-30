@@ -16,6 +16,7 @@ export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 
 repo init -u https://github.com/LineageOS/mirror --mirror
+repo sync --force-remove-dirty --force-sync
 
 
 chmod -R 777 /home/app/LudditeOS/LineageMirror
