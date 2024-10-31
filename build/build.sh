@@ -20,17 +20,20 @@ export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 
 
-if [ "$is_new" = "true" ]; then
-  cd /home/app/LudditeOS/android/lineage
-  repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
-fi
+
+
+
 
 
 if [[ "${STAR2LTE,,}" == "true" ]]; then
     echo "Luddite Build star2lte lineage 20"
+    
+    rm -rf /home/app/LudditeOS/android/lineage
+    mkdir -p /home/app/LudditeOS/android/lineage
+
     cd /home/app/LudditeOS/android/lineage
-    repo forall -c "git reset --hard"
-    repo init -b lineage-20.0
+    repo init -u /home/app/LudditeOS/LineageMirror/android.git -b lineage-20.0 --git-lfs
+    
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
     cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
@@ -47,9 +50,13 @@ fi
 
 if [[ "${ORIOLE,,}" == "true" ]]; then
     echo "Luddite Build oriole lineage 21"
+
+    rm -rf /home/app/LudditeOS/android/lineage
+    mkdir -p /home/app/LudditeOS/android/lineage
+
     cd /home/app/LudditeOS/android/lineage
-    repo forall -c "git reset --hard"
     repo init -b lineage-21.0
+
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
     cp /home/app/config/roomservice-oriole.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
@@ -67,3 +74,5 @@ fi
 
 cd /home/app/LudditeOS 
 chmod -R 777 android
+
+#den release nach release kopieren
