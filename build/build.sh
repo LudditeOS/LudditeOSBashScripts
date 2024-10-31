@@ -1,26 +1,15 @@
 #!/bin/bash -v
 
+mkdir -p /home/app/LudditeOS/android/lineage
+mkdir -p /home/app/dockerbin/bin
+curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/dockerbin/bin/repo
 
-is_new="false"
-
-
-
-if [ ! -d "/home/app/LudditeOS/bin/repo" ]; then
-    is_new="true"
-    echo "repo not yet installed, installing repo"
-    mkdir -p /home/app/LudditeOS/android/lineage
-    curl https://storage.googleapis.com/git-repo-downloads/repo > /home/app/LudditeOS/bin/repo
-fi
-
-chmod a+x /home/app/LudditeOS/bin/repo
-PATH=/home/app/LudditeOS/bin:$PATH
+chmod a+x /home/app/dockerbin/bin/repo
+PATH=/home/app/dockerbin/bin:$PATH
 git lfs install
 git config --global trailer.changeid.key "Change-Id"
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
-
-
-
 
 
 
