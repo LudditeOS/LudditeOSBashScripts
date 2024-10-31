@@ -46,6 +46,13 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
 
     croot
     brunch star2lte
+
+    cd /home/app/LudditeOS 
+    chmod -R 777 android
+
+    currentTime=$(date +"%Y%m%d_%H%M%S")
+    mkdir -p "/home/app/LudditeOS/release/${currentTime}/star2lte-20"
+    cp -r /home/app/LudditeOS/android/lineage/out/target/product/star2lte "/home/app/LudditeOS/release/${currentTime}/star2lte-20" 
 fi
 
 if [[ "${ORIOLE,,}" == "true" ]]; then
@@ -69,10 +76,16 @@ if [[ "${ORIOLE,,}" == "true" ]]; then
 
     croot
     brunch oriole
+
+    cd /home/app/LudditeOS 
+    chmod -R 777 android
+
+    currentTime=$(date +"%Y%m%d_%H%M%S")
+    mkdir -p "/home/app/LudditeOS/release/${currentTime}/oriole-21"
+    cp -r /home/app/LudditeOS/android/lineage/out/target/product/oriole "/home/app/LudditeOS/release/${currentTime}/oriole-21" 
 fi
 
 
-cd /home/app/LudditeOS 
-chmod -R 777 android
+
 
 #den release nach release kopieren
