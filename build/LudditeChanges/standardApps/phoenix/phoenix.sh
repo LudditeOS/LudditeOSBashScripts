@@ -8,4 +8,4 @@ if [ -d "$appdirectory" ]; then
 fi
 mkdir -p "$appdirectory"
 wget -O "$appdirectory/Phoenix.apk" "$url"
-cp build/LudditeChanges/standardApps/phoenix/Android.mk "$appdirectory"
+cp /home/app/LudditeChanges/standardApps/phoenix/Android.mk "$appdirectory"
