@@ -10,7 +10,7 @@ if [ -d "$appdirectory" ]; then
 fi
 mkdir -p "$appdirectory"
 wget "$url" -P "$appdirectory"
-cp Android.mk "$appdirectory"
+cp /home/app/LudditeChanges/standardApps/focuslauncher/Android.mk "$appdirectory"
 
 mkdir -p "$buildDirectory"
 

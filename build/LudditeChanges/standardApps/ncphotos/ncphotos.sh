@@ -8,7 +8,7 @@ if [ -d "$appdirectory" ]; then
 fi
 mkdir -p "$appdirectory"
 wget -O "$appdirectory/ncphotos.apk" "$url"
-cp Android.mk "$appdirectory"
+cp /home/app/LudditeChanges/standardApps/ncphotos/Android.mk "$appdirectory"
 
 
 
