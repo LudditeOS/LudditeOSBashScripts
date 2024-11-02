@@ -8,3 +8,15 @@
         path="vendor/samsung/exynos9810-common"
         remote="TheMuppets" depth="1" />
 </manifest>
+
+
+<!-- user@host:~/lineage-20$ cat .repo/local_manifests/muppets.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <project name="TheMuppets/proprietary_vendor_samsung_star2lte" path="vendor/samsung/star2lte"
+        remote="github" revision="lineage-20" />
+    <project name="TheMuppets/proprietary_vendor_samsung_exynos9810-common"
+        path="vendor/samsung/exynos9810-common" remote="github" revision="lineage-20" />
+</manifest>
+user@host:~/lineage-20$ rm -rf vendor/samsung/star2lte vendor/samsung/exynos9810-common
+user@host:~/lineage-20$ repo sync vendor/samsung/star2lte vendor/samsung/exynos9810-common -->
