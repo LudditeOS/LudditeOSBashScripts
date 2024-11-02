@@ -8,7 +8,7 @@
 if [[ "${STAR2LTE,,}" == "true" ]]; then
     echo "Luddite Build star2lte lineage 20"
     
-    rm -rf /home/app/LudditeOS/android/lineage
+    rm -rf /home/app/LudditeOS/android
     rm -rf /home/app/LudditeOS/bin
     
 
@@ -30,7 +30,7 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
     cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
-    repo sync --force-remove-dirty --force-sync
+    repo sync
     
     chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
