@@ -22,7 +22,7 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
 
 
     cd /home/app/LudditeOS/android/lineage
-    repo init -u /home/app/LudditeOS/LineageMirror/LineageOS/android.git -b lineage-20.0 --git-lfs
+    repo init -u http://www.github.com/LineageOS/android -b lineage-20.0 --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
     
 
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
