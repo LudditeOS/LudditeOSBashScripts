@@ -2,9 +2,6 @@
 
 
 
-
-
-
 if [[ "${STAR2LTE,,}" == "true" ]]; then
     echo "Luddite Build star2lte lineage 20"
     
@@ -27,10 +24,13 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
     cd /home/app/LudditeOS/android/lineage
     repo init -u /home/app/LudditeOS/LineageMirror/LineageOS/android.git -b lineage-20.0 --git-lfs
     
+
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
     cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
+    cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/muppets.xml
 
-    repo sync
+    rm -rf vendor/samsung/star2lte vendor/samsung/exynos9810-common
+    repo sync vendor/samsung/star2lte vendor/samsung/exynos9810-common
     
     chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
