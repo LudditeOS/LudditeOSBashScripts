@@ -24,9 +24,9 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
     cd /home/app/LudditeOS/android/lineage
     repo init -u http://www.github.com/LineageOS/android -b lineage-20.0 --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
     
-
+    #https://luk1337.github.io/muppets/
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-    cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
+    #cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
     cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/muppets.xml
 
     rm -rf vendor/samsung/star2lte vendor/samsung/exynos9810-common
@@ -79,8 +79,3 @@ if [[ "${ORIOLE,,}" == "true" ]]; then
     mkdir -p "/home/app/LudditeOS/release/${currentTime}/oriole-21"
     cp -r /home/app/LudditeOS/android/lineage/out/target/product/oriole "/home/app/LudditeOS/release/${currentTime}/oriole-21" 
 fi
-
-
-
-
-#den release nach release kopieren
