@@ -30,7 +30,7 @@ if [[ "${STAR2LTE,,}" == "true" ]]; then
     cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/muppets.xml
 
     rm -rf vendor/samsung/star2lte vendor/samsung/exynos9810-common
-    repo sync vendor/samsung/star2lte vendor/samsung/exynos9810-common
+    repo sync
     
     chmod -R a+x /home/app/LudditeChanges
     . /home/app/LudditeChanges/applyLudditeChanges.sh
