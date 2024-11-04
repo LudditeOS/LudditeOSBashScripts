@@ -22,20 +22,20 @@ cd /home/app/LudditeOS/android/lineage
 repo init -u http://www.github.com/LineageOS/android -b lineage-20.0 --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
     
 #https://luk1337.github.io/muppets/
+#https://gist.github.com/fourkbomb/261ced58cd029c5f7742350aafdd9825
 
 repo sync
     
 mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
 cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
-#cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/muppets.xml
 
 repo sync
 
+chmod -R a+x /home/app/LudditeChanges
+. /home/app/LudditeChanges/applyLudditeChanges.sh
+
 source build/envsetup.sh
 breakfast star2lte
-    
-#chmod -R a+x /home/app/LudditeChanges
-#. /home/app/LudditeChanges/applyLudditeChanges.sh
 
 source build/envsetup.sh
 breakfast star2lte
