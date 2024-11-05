@@ -1,6 +1,6 @@
 #install Focuslauncher
 
-url="https://github.com/ostaubzug/FocusLauncherRelease/releases/download/V0.1/app-release.apk"
+url="https://github.com/ostaubzug/FocusLauncherRelease/releases/download/V0.2/focuslauncher.apk"
 appdirectory="/home/app/LudditeOS/android/lineage/packages/apps/FocusLauncher"
 buildDirectory="/home/app/LudditeOS/android/lineage/build/target/product"
 
