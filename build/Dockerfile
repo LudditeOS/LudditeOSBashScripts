@@ -7,8 +7,8 @@ RUN mkdir -p /home/app/LudditeOS/android/lineage
 
 ENV GIT_NAME=git_name
 ENV GIT_MAIL=git_mail
-ENV STAR2LTE=true
-ENV ORIOLE=true
+ENV BUILD_TARGET=star2lte
+ENV BUILD_LINEAGE_VERSION=20.0
 
 
 RUN apt-get -y update

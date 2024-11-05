@@ -1,8 +1,6 @@
 #!/bin/bash -v
 
 
-
-    
 rm -rf /home/app/LudditeOS/bin
 rm -rf /home/app/LudditeOS/android
     
@@ -19,15 +17,12 @@ export CCACHE_EXEC=/usr/bin/ccache
 
 
 cd /home/app/LudditeOS/android/lineage
-repo init -u http://www.github.com/LineageOS/android -b lineage-20.0 --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
-    
-#https://luk1337.github.io/muppets/
-#https://gist.github.com/fourkbomb/261ced58cd029c5f7742350aafdd9825
+repo init -u http://www.github.com/LineageOS/android -b lineage-${BUILD_LINEAGE_VERSION} --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
 
 repo sync
     
 mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-cp /home/app/config/roomservice-star2lte.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
+cp /home/app/config/roomservice-${BUILD_TARGET}.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
 repo sync
 
@@ -35,17 +30,17 @@ chmod -R a+x /home/app/LudditeChanges
 . /home/app/LudditeChanges/applyLudditeChanges.sh
 
 source build/envsetup.sh
-breakfast star2lte
+breakfast ${BUILD_TARGET}
 
 source build/envsetup.sh
-breakfast star2lte
+breakfast ${BUILD_TARGET}
 
 croot
-brunch star2lte
+brunch ${BUILD_TARGET}
 
 cd /home/app/LudditeOS 
 chmod -R 777 android
 
 currentTime=$(date +"%Y%m%d_%H%M%S")
-mkdir -p "/home/app/LudditeOS/release/${currentTime}/star2lte-20"
-cp -r /home/app/LudditeOS/android/lineage/out/target/product/star2lte "/home/app/LudditeOS/release/${currentTime}/star2lte-20" 
+mkdir -p "/home/app/LudditeOS/release/${currentTime}/${BUILD_TARGET}"
+cp -r /home/app/LudditeOS/android/lineage/out/target/product/${BUILD_TARGET} "/home/app/LudditeOS/release/${currentTime}/${BUILD_TARGET}" 
