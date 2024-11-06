@@ -9,10 +9,8 @@ if [ -d "$appdirectory" ]; then
     rm -rf "$appdirectory"
 fi
 mkdir -p "$appdirectory"
-wget "$url" -P "$appdirectory"
+wget -O "$appdirectory/focuslauncher.apk" "$url"
 cp /home/app/LudditeChanges/standardApps/focuslauncher/Android.mk "$appdirectory"
 
 mkdir -p "$buildDirectory"
-
-
 
