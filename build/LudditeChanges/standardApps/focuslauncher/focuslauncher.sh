@@ -2,8 +2,6 @@
 
 url="https://github.com/ostaubzug/FocusLauncherRelease/releases/download/V0.0.42/focuslauncher.apk"
 appdirectory="/home/app/LudditeOS/android/lineage/packages/apps/FocusLauncher"
-buildDirectory="/home/app/LudditeOS/android/lineage/build/target/product"
-
 
 if [ -d "$appdirectory" ]; then
     rm -rf "$appdirectory"
