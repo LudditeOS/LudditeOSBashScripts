@@ -1,7 +1,7 @@
 #bootanimation.sh
 
 bash /home/app/LudditeChanges/bootanimation/bootanimation.sh
-#bash /home/app/LudditeChanges/standardApps/handheldProduct/handheldProduct.sh
+bash /home/app/LudditeChanges/standardApps/handheldProduct/handheldProduct.sh
 
 
 bash /home/app/LudditeChanges/standardApps/aegis/aegis.sh
