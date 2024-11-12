@@ -1,0 +1,7 @@
+/Volumes/oliver/LudditeOS/android/lineage/vendor/lineage/config/common.mk
+
+
+
+browser vom handheld entfernen.
+
+/Volumes/oliver/LudditeOS/android/lineage/device/google/raviole/lineage_oriole.mk
