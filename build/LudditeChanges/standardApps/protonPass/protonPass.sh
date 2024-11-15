@@ -1,4 +1,4 @@
-appdirectory="/home/pass/LudditeOS/android/lineage/packages/apps/ProtonPass"
+appdirectory="/home/app/LudditeOS/android/lineage/packages/apps/ProtonPass"
 
 if [ -d "$appdirectory" ]; then
     rm -rf "$appdirectory"
