@@ -6,3 +6,6 @@ $ docker run \
     julianxhokaxhiu/lineageota
 
 
+
+sudo adb pull /mnt/system/system/build.prop build.prop
+- todo: README zusammenstellen und open source machen.
