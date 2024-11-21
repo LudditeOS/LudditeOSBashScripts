@@ -1,0 +1,8 @@
+$ docker run \
+    --restart=always \
+    -d \
+    -p 5500:80 \
+    -v "/home/oliver/LudditeOS/release/ota/builds:/var/www/html/builds/full" \
+    julianxhokaxhiu/lineageota
+
+
