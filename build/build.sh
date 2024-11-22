@@ -29,10 +29,8 @@ repo sync
 chmod -R a+x /home/app/LudditeChanges
 . /home/app/LudditeChanges/applyLudditeChanges.sh
 
-sed -i "1s;^;PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://192.168.1.195/api/v1/$BUILD_TARGET/unofficial/{}\n\n;" /home/app/LudditeOS/android/lineage/vendor/lineage/config/common.mk
 
-source build/envsetup.sh
-breakfast ${BUILD_TARGET}
+sed -i "1s;^;PRODUCT_VENDOR_PROPERTIES += lineage.updater.uri=https://192.168.1.195/api/v1/$BUILD_TARGET/unofficial/{}\n\n;" /home/app/LudditeOS/android/lineage/vendor/lineage/config/common.mk
 
 source build/envsetup.sh
 breakfast ${BUILD_TARGET}
