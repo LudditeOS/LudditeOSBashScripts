@@ -5,7 +5,11 @@ $ docker run \
     -v "/home/oliver/LudditeOS/release/ota/builds:/var/www/html/builds/full" \
     julianxhokaxhiu/lineageota
 
-
-
 sudo adb pull /mnt/system/system/build.prop build.prop
+adb shell getprop ro.adb.secure
+adb shell getprop lineage.updater.uri
+
+
+
+
 - todo: README zusammenstellen und open source machen.
