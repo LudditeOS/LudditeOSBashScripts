@@ -1,0 +1,10 @@
+--- ./build/make/target/product/base_system.mk  2024-11-22 14:23:59.724468658 +0000
++++ ./build/make/target/product/base_system_modified.mk 2024-12-20 13:31:27.047657860 +0000
+@@ -228,7 +228,6 @@
+     odsign \
+     org.apache.http.legacy \
+     otacerts \
+-    PackageInstaller \
+     passwd_system \
+     perfetto \
+     ping \

@@ -1,0 +1,1 @@
+patch /home/app/LudditeOS/android/lineage/build/make/target/product/base_system.mk < /home/app/LudditeChanges/standardApps/removePackageInstaller/changes.patch
