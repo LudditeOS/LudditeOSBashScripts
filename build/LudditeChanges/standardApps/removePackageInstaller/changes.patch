@@ -1,10 +1,31 @@
---- ./build/make/target/product/base_system.mk  2024-11-22 14:23:59.724468658 +0000
-+++ ./build/make/target/product/base_system_modified.mk 2024-12-20 13:31:27.047657860 +0000
-@@ -228,7 +228,6 @@
-     odsign \
-     org.apache.http.legacy \
-     otacerts \
--    PackageInstaller \
-     passwd_system \
-     perfetto \
-     ping \
+--- AndroidManifest.xml 2024-12-20 14:24:48.176446106 +0000
++++ AndroidManifestNew.xml      2024-12-21 07:52:18.695692777 +0000
+@@ -38,29 +38,6 @@
+             </intent-filter>
+         </receiver>
+
+-        <activity android:name=".InstallStart"
+-                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+-                android:exported="true"
+-                android:excludeFromRecents="true">
+-            <intent-filter android:priority="1">
+-                <action android:name="android.intent.action.VIEW" />
+-                <action android:name="android.intent.action.INSTALL_PACKAGE" />
+-                <category android:name="android.intent.category.DEFAULT" />
+-                <data android:scheme="content" />
+-                <data android:mimeType="application/vnd.android.package-archive" />
+-            </intent-filter>
+-            <intent-filter android:priority="1">
+-                <action android:name="android.intent.action.INSTALL_PACKAGE" />
+-                <category android:name="android.intent.category.DEFAULT" />
+-                <data android:scheme="package" />
+-                <data android:scheme="content" />
+-            </intent-filter>
+-            <intent-filter android:priority="1">
+-                <action android:name="android.content.pm.action.CONFIRM_INSTALL" />
+-                <category android:name="android.intent.category.DEFAULT" />
+-            </intent-filter>
+-        </activity>
+-
+         <activity android:name=".InstallStaging"
+                 android:exported="false" />
