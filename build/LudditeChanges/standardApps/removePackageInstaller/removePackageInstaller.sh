@@ -1,1 +1,1 @@
-patch /home/app/LudditeOS/android/lineage/frameworks/base/packages/PackageInstaller/AnkdroidManifest.xml < /home/app/LudditeChanges/standardApps/removePackageInstaller/changes.patch
+patch /home/app/LudditeOS/android/lineage/frameworks/base/packages/PackageInstaller/AndroidManifest.xml < /home/app/LudditeChanges/standardApps/removePackageInstaller/changes.patch
