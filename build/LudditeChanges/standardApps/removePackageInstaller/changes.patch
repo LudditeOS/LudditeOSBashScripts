@@ -1,16 +1,10 @@
---- AndroidManifest.xml.orig    2024-12-21 19:18:12.859942254 +0000
-+++ AndroidManifest.xml 2024-12-22 09:36:36.443313253 +0000
-@@ -43,13 +43,6 @@
-                 android:exported="true"
+--- AndroidManifest.xml    2024-12-22 10:25:31.568596427 +0000
++++ AndroidManifest.xml 2024-12-22 18:01:10.875225611 +0000
+@@ -40,7 +40,8 @@
+
+         <activity android:name=".InstallStart"
+                 android:theme="@android:style/Theme.Translucent.NoTitleBar"
++                android:enabled="false"
                  android:excludeFromRecents="true">
--            <intent-filter android:priority="1">
--                <action android:name="android.intent.action.VIEW" />
--                <action android:name="android.intent.action.INSTALL_PACKAGE" />
--                <category android:name="android.intent.category.DEFAULT" />
--                <data android:scheme="content" />
--                <data android:mimeType="application/vnd.android.package-archive" />
--            </intent-filter>
              <intent-filter android:priority="1">
-                 <action android:name="android.intent.action.INSTALL_PACKAGE" />
-                 <category android:name="android.intent.category.DEFAULT" />
-                 <data android:scheme="package" />
+                 <action android:name="android.intent.action.VIEW" />                                                                  
