@@ -17,17 +17,19 @@ export CCACHE_EXEC=/usr/bin/ccache
 
 
 cd /home/app/LudditeOS/android/lineage
-repo init -u http://www.github.com/LineageOS/android -b lineage-${BUILD_LINEAGE_VERSION} --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
 
-repo sync
+if [ "$FULL_BUILD" = true ]; then
+    repo init -u http://www.github.com/LineageOS/android -b lineage-${BUILD_LINEAGE_VERSION} --git-lfs --reference=/home/app/LudditeOS/LineageMirror/LineageOS/android.git
+    repo sync
     
-mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-cp /home/app/config/roomservice-${BUILD_TARGET}.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
+    mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
+    cp /home/app/config/roomservice-${BUILD_TARGET}.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
-repo sync
+    repo sync
 
-chmod -R a+x /home/app/LudditeChanges
-. /home/app/LudditeChanges/applyLudditeChanges.sh
+    chmod -R a+x /home/app/LudditeChanges
+    . /home/app/LudditeChanges/applyLudditeChanges.sh
+fi
 
 source build/envsetup.sh
 breakfast ${BUILD_TARGET}
