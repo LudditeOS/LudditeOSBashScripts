@@ -1,23 +1,7 @@
 #!/bin/bash -v
 
-# Debug prints
-echo "FULL_BUILD raw value: $FULL_BUILD"
-echo "FULL_BUILD quoted value: '$FULL_BUILD'"
-echo "String comparison result: $([ "$FULL_BUILD" = "true" ] && echo "true" || echo "false")"
-
-# Try different comparison methods
-if [ "$FULL_BUILD" = "true" ]; then
-    echo "Comparison method 1 succeeded"
-    # ... rest of your code
-elif [[ "$FULL_BUILD" == "true" ]]; then
-    echo "Comparison method 2 succeeded"
-    # ... rest of your code
-elif [ "$FULL_BUILD" == true ]; then
-    echo "Comparison method 3 succeeded"
-    # ... rest of your code
-fi
-
 if [[ "${FULL_BUILD}" == "true" ]]; then
+    echo "Starting full build process..."
     rm -rf /home/app/LudditeOS/bin
     rm -rf /home/app/LudditeOS/android
     
