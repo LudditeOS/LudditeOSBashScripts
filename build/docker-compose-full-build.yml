@@ -8,6 +8,6 @@ services:
       - GIT_MAIL=git@luddite-os.ch
       - BUILD_TARGET=star2lte
       - BUILD_LINEAGE_VERSION=20.0
-      - FULL_BUILD=false
+      - FULL_BUILD=true
     volumes:
       - /home/oliver/LudditeOS:/home/app/LudditeOS
