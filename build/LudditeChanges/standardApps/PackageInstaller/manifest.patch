@@ -12,4 +12,3 @@
 +                <data android:mimeType="application/vnd.android.package-archive" />
 +            </intent-filter>
          </activity>
-         
