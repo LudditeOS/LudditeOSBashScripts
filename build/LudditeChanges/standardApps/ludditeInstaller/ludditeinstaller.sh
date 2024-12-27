@@ -6,4 +6,4 @@ if [ -d "$appdirectory" ]; then
 fi
 mkdir -p "$appdirectory"
 wget -O "$appdirectory/ludditeinstaller.apk" "$url"
-cp /home/app/LudditeChanges/standardApps/ludditeinstaller/Android.mk "$appdirectory"
+cp /home/app/LudditeChanges/standardApps/LudditeInstaller/Android.mk "$appdirectory"
