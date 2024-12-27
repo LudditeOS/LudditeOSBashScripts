@@ -1,14 +1,15 @@
 --- AndroidManifestOriginal.xml	2024-12-24 09:07:54.785593500 +0000
 +++ AndroidManifest.xml	2024-12-26 12:07:10.838060846 +0000
-
-@@ -59,44 +59,50 @@
-                 <action android:name="android.content.pm.action.CONFIRM_INSTALL" />
-                 <category android:name="android.intent.category.DEFAULT" />
-             </intent-filter>
+@@ -89,7 +89,14 @@
+                 android:theme="@style/Theme.AlertDialogActivity.NoActionBar"
+                 android:exported="false" />
+ 
+-        <activity android:name=".PackageInstallerActivity"
++        <activity android:name=".PackageInstallerActivity">
 +            <intent-filter android:priority="1">
 +                <action android:name="com.luddite.app.store.INSTALL_PACKAGE" />
 +                <category android:name="android.intent.category.DEFAULT" />
 +                <data android:scheme="content" />
 +                <data android:mimeType="application/vnd.android.package-archive" />
 +            </intent-filter>
-         </activity>
++        </activity>
