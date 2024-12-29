@@ -13,10 +13,3 @@
          </activity>
  
          <activity android:name=".InstallStaging"
-@@ -144,4 +150,4 @@
-             android:exported="true" />
-     </application>
- 
--</manifest>
-\ No newline at end of file
-+</manifest>
