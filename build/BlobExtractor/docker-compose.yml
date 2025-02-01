@@ -1,0 +1,9 @@
+version: "3"
+services:
+  blob_extractor:
+    build: .
+    privileged: true # Needed for ADB access
+    volumes:
+      - ./output:/home/blob-extractor/output
+    devices:
+      - /dev/bus/usb:/dev/bus/usb # Pass through USB for ADB
