@@ -4,8 +4,10 @@ services:
     image: oli1115/ludditebuild:latest
     container_name: LudditeBuild
     environment:
-      - BUILD_TARGET=oriole
-      - BUILD_LINEAGE_VERSION=22.1
+      - GIT_NAME=ludditesrv
+      - GIT_MAIL=git@luddite-os.ch
+      - BUILD_TARGET=star2lte
+      - BUILD_LINEAGE_VERSION=20.0
       - FULL_BUILD=true
     volumes:
       - /home/oliver/LudditeOS:/home/app/LudditeOS

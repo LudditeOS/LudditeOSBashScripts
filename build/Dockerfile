@@ -5,6 +5,8 @@ RUN mkdir -p /home/app/LudditeOS/bin
 RUN mkdir -p /home/app/LudditeOS/android
 RUN mkdir -p /home/app/LudditeOS/android/lineage
 
+ENV GIT_NAME=git_name
+ENV GIT_MAIL=git_mail
 ENV BUILD_TARGET=star2lte
 ENV BUILD_LINEAGE_VERSION=20.0
 ENV FULL_BUILD=true
