@@ -1,0 +1,91 @@
+Starting full build process...
+Git LFS initialized.
+
+repo has been initialized in /home/app/LudditeOS/android/lineage
+device/qcom/sepolicy: Shared project LineageOS/android_device_qcom_sepolicy found, disabling pruning.
+device/qcom/sepolicy_vndr/legacy-um: Shared project LineageOS/android_device_qcom_sepolicy_vndr found, disabling pruning.
+hardware/qcom-caf/bt: Shared project LineageOS/android_hardware_qcom_bt found, disabling pruning.
+hardware/qcom-caf/msm8953/audio: Shared project LineageOS/android_hardware_qcom_audio found, disabling pruning.
+hardware/qcom-caf/msm8953/display: Shared project LineageOS/android_hardware_qcom_display found, disabling pruning.
+hardware/qcom-caf/msm8953/media: Shared project LineageOS/android_hardware_qcom_media found, disabling pruning.
+hardware/qcom-caf/sm8450/audio/agm: Shared project LineageOS/android_vendor_qcom_opensource_agm found, disabling pruning.
+hardware/qcom-caf/sm8450/audio/pal: Shared project LineageOS/android_vendor_qcom_opensource_arpal-lx found, disabling pruning.
+hardware/qcom-caf/sm8450/audio/primary-hal: Shared project LineageOS/android_hardware_qcom_audio-ar found, disabling pruning.
+hardware/qcom-caf/sm8450/data-ipa-cfg-mgr: Shared project LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr found, disabling pruning.
+hardware/qcom-caf/wlan: Shared project LineageOS/android_hardware_qcom_wlan found, disabling pruning.
+repo sync has finished successfully.
+repo sync has finished successfully.
+patching file /home/app/LudditeOS/android/lineage/vendor/lineage/bootanimation/Android.mk
+patching file /home/app/LudditeOS/android/lineage/frameworks/base/packages/PackageInstaller/src/com/android/packageinstaller/PackageInstallerActivity.java
+Hunk #1 succeeded at 170 with fuzz 2 (offset 27 lines).
+patching file /home/app/LudditeOS/android/lineage/frameworks/base/packages/PackageInstaller/src/com/android/packageinstaller/InstallStart.java
+Hunk #1 FAILED at 80.
+1 out of 1 hunk FAILED -- saving rejects to file /home/app/LudditeOS/android/lineage/frameworks/base/packages/PackageInstaller/src/com/android/packageinstaller/InstallStart.java.rej
+patching file /home/app/LudditeOS/android/lineage/frameworks/base/packages/PackageInstaller/AndroidManifest.xml
+Hunk #1 succeeded at 72 with fuzz 1 (offset 13 lines).
+repo sync has finished successfully.
+repo sync has finished successfully.
+repo sync has finished successfully.
+repo sync has finished successfully.
+Device oriole not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).
+Found repository: android_device_google_oriole
+Default revision: lineage-22.1
+Checking branch info
+Checking if device/google/oriole is fetched from android_device_google_oriole
+Adding dependency: LineageOS/android_device_google_oriole -> device/google/oriole
+Syncing repository to retrieve project.
+Repository synced!
+Looking for dependencies in device/google/oriole
+Default revision: lineage-22.1
+Checking branch info
+Adding dependencies to manifest
+Checking if device/google/raviole is fetched from android_device_google_raviole
+Adding dependency: LineageOS/android_device_google_raviole -> device/google/raviole
+Syncing dependencies
+Looking for dependencies in device/google/raviole
+Default revision: lineage-22.1
+Checking branch info
+Adding dependencies to manifest
+Checking if device/google/gs101 is fetched from android_device_google_gs101
+Adding dependency: LineageOS/android_device_google_gs101 -> device/google/gs101
+Checking if device/google/raviole-kernels/5.10 is fetched from device/google/raviole-kernels/5.10
+Adding dependency: device/google/raviole-kernels/5.10 -> device/google/raviole-kernels/5.10
+Syncing dependencies
+Looking for dependencies in device/google/gs101
+Default revision: lineage-22.1
+Checking branch info
+Adding dependencies to manifest
+Checking if device/google/gs-common is fetched from android_device_google_gs-common
+Adding dependency: LineageOS/android_device_google_gs-common -> device/google/gs-common
+Syncing dependencies
+Looking for dependencies in device/google/gs-common
+device/google/gs-common has no additional dependencies.
+Looking for dependencies in device/google/raviole-kernels/5.10
+device/google/raviole-kernels/5.10 has no additional dependencies.
+Done
+
+** Don't have a product spec for: 'lineage_oriole'
+** Do you have the right repo manifest?
+
+repo sync has finished successfully.
+Device oriole not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).
+Found repository: android_device_google_oriole
+Default revision: lineage-22.1
+Checking branch info
+Checking if device/google/oriole is fetched from android_device_google_oriole
+LineageOS/android_device_google_oriole already fetched to device/google/oriole
+Syncing repository to retrieve project.
+Repository synced!
+Looking for dependencies in device/google/oriole
+Looking for dependencies in device/google/raviole
+Looking for dependencies in device/google/gs101
+Looking for dependencies in device/google/gs-common
+device/google/gs-common has no additional dependencies.
+Looking for dependencies in device/google/raviole-kernels/5.10
+device/google/raviole-kernels/5.10 has no additional dependencies.
+Done
+
+** Don't have a product spec for: 'lineage_oriole'
+** Do you have the right repo manifest?
+
+No such item in brunch menu. Try 'breakfast'
