@@ -1,4 +1,4 @@
-url="https://github.com/ostaubzug/LudditeInstaller/releases/download/V0.4.1/ludditeinstaller.apk"
+url="https://github.com/ostaubzug/LudditeInstaller/releases/download/V0.4.4/ludditeinstaller.apk"
 appdirectory="/home/app/LudditeOS/android/lineage/packages/apps/LudditeInstaller"
 
 if [ -d "$appdirectory" ]; then
