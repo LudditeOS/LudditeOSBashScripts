@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="TheMuppets" fetch="https://github.com/" revision="refs/heads/lineage-22.1" />
-
     <project name="TheMuppets/proprietary_vendor_google_oriole" path="vendor/google/oriole"
-        remote="TheMuppets" depth="1" />
+        remote="github" />
 </manifest>
