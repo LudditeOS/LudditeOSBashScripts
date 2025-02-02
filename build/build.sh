@@ -1,5 +1,10 @@
 #!/bin/bash -v
 
+if [[ "${DEBUG_MODE}" == "true" ]]; then
+    echo "Container started in debug mode. Waiting..."
+    tail -f /dev/null
+fi
+
 if [[ "${FULL_BUILD}" == "true" ]]; then
     echo "Starting full build process..."
     rm -rf /home/app/LudditeOS/bin

@@ -10,6 +10,7 @@ ENV GIT_MAIL=git_mail
 ENV BUILD_TARGET=star2lte
 ENV BUILD_LINEAGE_VERSION=20.0
 ENV FULL_BUILD=true
+ENV DEBUG_MODE=false 
 
 
 RUN apt-get -y update

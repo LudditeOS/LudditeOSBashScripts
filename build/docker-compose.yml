@@ -9,5 +9,6 @@ services:
       - BUILD_TARGET=star2lte
       - BUILD_LINEAGE_VERSION=20.0
       - FULL_BUILD=false
+      - DEBUG_MODE=false
     volumes:
       - /home/oliver/LudditeOS:/home/app/LudditeOS

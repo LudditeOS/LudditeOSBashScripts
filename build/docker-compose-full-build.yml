@@ -6,8 +6,9 @@ services:
     environment:
       - GIT_NAME=ludditesrv
       - GIT_MAIL=git@luddite-os.ch
-      - BUILD_TARGET=star2lte
-      - BUILD_LINEAGE_VERSION=20.0
+      - BUILD_TARGET=oriole
+      - BUILD_LINEAGE_VERSION=22.1
       - FULL_BUILD=true
+      - DEBUG_MODE=false
     volumes:
       - /home/oliver/LudditeOS:/home/app/LudditeOS
