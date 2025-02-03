@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://gitlab.com" name="gitlab" />
+    <project name="the-muppets/proprietary_vendor_google_oriole" path="vendor/google/oriole"
+        remote="gitlab" revision="lineage-20" />
+    <project name="the-muppets/proprietary_vendor_firmware" path="vendor/firmware" remote="gitlab"
+        revision="lineage-20" clone-depth="1" />
+</manifest>

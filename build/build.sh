@@ -1,4 +1,6 @@
-#!/bin/bash -v
+#!/bin/bash
+# At the start of build.sh
+exec 1> >(grep -v "^ninja\|^FAILED:\|^Checking\|^Reading\|^Including\|^\[" | grep -v "^$")
 
 if [[ "${DEBUG_MODE}" == "true" ]]; then
     echo "Container started in debug mode. Waiting..."
@@ -29,7 +31,7 @@ if [[ "${FULL_BUILD}" == "true" ]]; then
     repo sync
     
     mkdir -p /home/app/LudditeOS/android/lineage/.repo/local_manifests
-    cp /home/app/config/roomservice-${BUILD_TARGET}.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
+    cp /home/app/config/roomservice-${BUILD_TARGET}-${BUILD_LINEAGE_VERSION}.xml /home/app/LudditeOS/android/lineage/.repo/local_manifests/roomservice.xml
 
     repo sync
 
