@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <project name="TheMuppets/proprietary_vendor_google_oriole" path="vendor/google/oriole"
+        remote="github" revision="lineage-21" />
+</manifest>
