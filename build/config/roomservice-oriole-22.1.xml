@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://gitlab.com" name="gitlab" />
+    <project name="TheMuppets/proprietary_vendor_google_oriole" path="vendor/google/oriole"
+        remote="github" />
+</manifest>
