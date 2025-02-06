@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote fetch="https://gitlab.com" name="gitlab" />
+    <remote name="lineage" fetch="https://github.com/LineageOS" />
+    <remote name="themuppets" fetch="https://github.com/TheMuppets" />
+
+    <!-- Device repos -->
+    <project name="LineageOS/android_device_google_oriole" path="device/google/oriole"
+        remote="lineage" />
+    <project name="LineageOS/android_device_google_raviole" path="device/google/raviole"
+        remote="lineage" />
+    <project name="LineageOS/android_device_google_gs101" path="device/google/gs101"
+        remote="lineage" />
+    <project name="LineageOS/android_device_google_gs-common" path="device/google/gs-common"
+        remote="lineage" />
+
+    <!-- Vendor blobs -->
     <project name="TheMuppets/proprietary_vendor_google_oriole" path="vendor/google/oriole"
-        remote="github" />
+        remote="themuppets" />
 </manifest>
