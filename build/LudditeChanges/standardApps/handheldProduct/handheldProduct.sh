@@ -1,1 +1,0 @@
-cp /home/app/LudditeChanges/standardApps/handheldProduct/handheld_product.mk /home/app/LudditeOS/android/lineage/build/make/target/product/handheld_product.mk

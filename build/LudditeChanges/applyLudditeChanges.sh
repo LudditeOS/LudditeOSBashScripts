@@ -1,5 +1,4 @@
 bash /home/app/LudditeChanges/bootanimation/bootanimation.sh
-bash /home/app/LudditeChanges/standardApps/handheldProduct/handheldProduct.sh
 
 bash /home/app/LudditeChanges/standardApps/LudditeInstaller/ludditeinstaller.sh
 bash /home/app/LudditeChanges/standardApps/PackageInstaller/packageinstaller.sh

@@ -1,1 +1,0 @@
-$(call inherit-product, vendor/luddite/luddite.mk)

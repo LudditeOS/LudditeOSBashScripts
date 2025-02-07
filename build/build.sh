@@ -35,9 +35,9 @@ if [[ "${FULL_BUILD}" == "true" ]]; then
 
     repo sync
 
-    mkdir -p /home/app/LudditeOS/android/lineage/vendor/luddite/apps
-    chmod -R a+x /home/app/LudditeChanges
-    . /home/app/LudditeChanges/applyLudditeChanges.sh
+    # mkdir -p /home/app/LudditeOS/android/lineage/vendor/luddite/apps
+    # chmod -R a+x /home/app/LudditeChanges
+    # . /home/app/LudditeChanges/applyLudditeChanges.sh
 fi
 
 cd /home/app/LudditeOS/android/lineage
