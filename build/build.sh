@@ -1,5 +1,4 @@
 #!/bin/bash
-# At the start of build.sh
 #exec 1> >(grep -v "^ninja\|^FAILED:\|^Checking\|^Reading\|^Including\|^\[" | grep -v "^$")
 
 if [[ "${DEBUG_MODE}" == "true" ]]; then
