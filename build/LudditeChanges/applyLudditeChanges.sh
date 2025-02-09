@@ -7,7 +7,7 @@ bash /home/app/LudditeChanges/standardApps/removeBrowser/removeBrowser.sh
 
 
 if [[ "${BUILD_LINEAGE_VERSION}" > "22.1" ]] || [[ "${BUILD_LINEAGE_VERSION}" = "22.1" ]]; then
-bash /home/app/LudditeChanges/standardApps/PackageInstaller/packageinstaller.sh
-else
 bash /home/app/LudditeChanges/standardApps/PackageInstaller221/packageinstaller.sh
+else
+bash /home/app/LudditeChanges/standardApps/PackageInstaller/packageinstaller.sh
 fi
