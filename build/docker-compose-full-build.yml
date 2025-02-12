@@ -9,6 +9,7 @@ services:
       - BUILD_TARGET=oriole
       - BUILD_LINEAGE_VERSION=22.1
       - FULL_BUILD=true
+      - APPLY_LUDDITECHANGES=true
       - DEBUG_MODE=false
     volumes:
       - /home/oliver/LudditeOS:/home/app/LudditeOS
