@@ -1,0 +1,16 @@
+--- InstallStart-original.java	2024-12-24 09:07:54.881593300 +0000
++++ InstallStart.java	2024-12-25 21:30:35.431342985 +0000
+@@ -80,6 +80,12 @@
+         final ApplicationInfo sourceInfo = getSourceInfo(callingPackage);
+         final int originatingUid = getOriginatingUid(sourceInfo);
+         boolean isTrustedSource = false;
++
++        if ("com.luddite.app.store.INSTALL_PACKAGE".equals(intent.getAction())) {
++            isTrustedSource = true;
++        }
++
++
+         if (sourceInfo != null
+                 && (sourceInfo.privateFlags & ApplicationInfo.PRIVATE_FLAG_PRIVILEGED) != 0) {
+             isTrustedSource = intent.getBooleanExtra(Intent.EXTRA_NOT_UNKNOWN_SOURCE, false);
+
