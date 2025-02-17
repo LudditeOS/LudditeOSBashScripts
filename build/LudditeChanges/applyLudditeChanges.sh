@@ -11,5 +11,5 @@ bash /home/app/LudditeChanges/PackageInstaller221/packageinstaller.sh
 bash /home/app/LudditeChanges/removeBrowser22/removeBrowser22.sh
 else
 bash /home/app/LudditeChanges/PackageInstaller/packageinstaller.sh
-bash /home/app/LudditeChanges/standardApps/removeBrowser/removeBrowser.sh
+bash /home/app/LudditeChanges/removeBrowser20/removeBrowser20.sh
 fi
