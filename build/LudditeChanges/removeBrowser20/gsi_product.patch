@@ -1,0 +1,10 @@
+--- gsi_productOriginal.mk	2025-02-13 16:49:06.158197346 +0000
++++ gsi_product.mk	2025-02-13 16:50:20.217631945 +0000
+@@ -19,7 +19,6 @@
+ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
+ 
+ PRODUCT_PACKAGES += \
+-    Browser2 \
+     Camera2 \
+     Dialer \
+     LatinIME \

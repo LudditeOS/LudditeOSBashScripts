@@ -1,0 +1,12 @@
+--- commonOriginal.mk	2025-02-16 09:44:47.705620640 +0000
++++ common.mk	2025-02-16 09:47:40.320358563 +0000
+@@ -125,8 +125,7 @@
+ # Lineage packages
+ ifeq ($(PRODUCT_IS_ATV),)
+ PRODUCT_PACKAGES += \
+-    ExactCalculator \
+-    Jelly
++    ExactCalculator
+ endif
+ 
+ ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
