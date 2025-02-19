@@ -1,0 +1,12 @@
+--- common_mobileOriginal.mk	2025-02-19 17:48:07.908670540 +0000
++++ common_mobile.mk	2025-02-19 17:48:42.392401871 +0000
+@@ -15,8 +15,7 @@
+ # Apps
+ PRODUCT_PACKAGES += \
+     Backgrounds \
+-    ExactCalculator \
+-    Jelly
++    ExactCalculator
+ 
+ ifeq ($(PRODUCT_TYPE), go)
+ PRODUCT_PACKAGES += \
