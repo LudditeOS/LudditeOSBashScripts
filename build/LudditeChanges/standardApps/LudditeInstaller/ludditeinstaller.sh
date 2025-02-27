@@ -1,5 +1,5 @@
 #!/bin/bash
-url="https://github.com/ostaubzug/LudditeInstaller/releases/download/V0.46/ludditeinstaller-aligned.apk"
+url="https://github.com/ostaubzug/LudditeInstaller/releases/download/V0.47/ludditeinstaller-aligned.apk"
 # Use the LineageOS vendor directory instead
 appdirectory="/home/app/LudditeOS/android/lineage/vendor/lineage/apps/LudditeInstaller"
 
